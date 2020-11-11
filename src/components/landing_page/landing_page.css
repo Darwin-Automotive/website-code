@@ -1,0 +1,31 @@
+.bike-name{
+  position: fixed !important;
+  justify-content: center;
+  align-self: center;
+  z-index: -1;
+  margin: 0% 0 0 15%;
+  opacity: 0.17;
+}
+
+.bike-name h1{
+  font-size: 15em;
+  font-family: 'Headache-Font-OTF';
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  margin: 0 auto;
+  /* background-image: linear-gradient(325deg, #49D14E 5%, yellow 50%); */
+  color: #49D14E;
+}
+
+@media(max-width:480px){
+  .bike-name{
+    position: relative !important;
+    margin: 45% 0 0 15%;
+    opacity: .4;
+    display: none;
+  }
+  .bike-name h1{
+    font-size: 4em;
+    letter-spacing: 2px;
+  }
+}

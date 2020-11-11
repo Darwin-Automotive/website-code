@@ -1,0 +1,44 @@
+
+:root{
+  --primary: #49D14E;
+}
+
+.buttons {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: linear-gradient(325deg, #131313 20%, #999999 10%);
+  box-shadow: 6px 3px 15px rgba(210, 210, 210, .13);
+  /* box-shadow: 6px 3px 15px rgba(210, 210, 210, 1); */
+  border-radius: 40px;
+  padding: 15px 35px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  /* letter-spacing: 2px; */
+  text-transform: uppercase;
+  /* color: #121212; */
+  color: #F2F2F2;
+  display: inline-block;
+  margin: 1% 25px 0 0;
+  padding: 15px 40px;
+}
+
+.buttons:hover{
+  /* background-color: #47D14E; */
+  color: #49D14E;
+  transition: all 0.3s ease-out;
+  border: none;
+  transform: translate(1px, -1px);
+  box-shadow: 3px 3px 15px rgba(210, 210, 210, .2);
+
+}
+
+@media(max-width:780px){
+  .buttons{
+    width: 80%;
+    padding: 15px auto;
+    text-align: center;
+    align-self: center;
+  }
+}

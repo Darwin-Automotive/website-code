@@ -1,0 +1,56 @@
+.pricing{
+  margin: 30px 20%;
+  margin-bottom: -8%;
+}
+
+
+.headStyling {
+  padding: 15px 0;
+  font-weight: 600;
+  color: #f2f2f2;
+  /* color: #121212; */
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.pricing table{
+  text-align: center;
+  margin: 2% auto;
+}
+.pricing td, .pricing th{
+  padding: 25px 100px;
+  text-align: center;
+  font-size: 12pt;
+  font-family: 'Rubik';
+  color: #47D14E;
+  border: 2px solid #a0a0a0;
+  /* border: 2px solid #121212; */
+}
+
+.bike-spec, .pricing th{
+  color: #f2f2f2 !important;
+  /* color: #121212 !important; */
+}
+
+.pricing-info{
+  font-size: 10pt;
+  color: #f2f2f2;
+  /* color: #121212; */
+  padding: 5% 0 0 0%;
+  font-family: 'Rubik';
+}
+
+@media(max-width: 480px){
+  .pricing{
+    margin: 0 12%;
+  }
+  .pricing-info{
+    padding: 5% 0 0 8%;
+  }
+  .pricing td, .pricing th{
+    font-size: 10pt;
+    padding: 10px 10px;
+
+  }
+}

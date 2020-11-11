@@ -1,0 +1,47 @@
+.specStyling{
+  margin: 3% 0 -8% 20%;
+}
+
+.featureGroup{
+  /* margin-left: 15%; */
+  margin: 2% 0%;
+}
+
+
+.spec-img img{
+  margin-bottom: -30%;
+  width: 30%;
+  height: 30%;
+  /* display: inline; */
+  position: relative;
+  left: 50%;
+  top: -32vw;
+}
+
+
+.headStyling {
+  padding: 15px 0;
+  font-weight: 600;
+  color: #f2f2f2;
+  /* color: #121212; */
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+@media(max-width:480px){
+  .specStyling{
+    margin: 3% 0 30% 12%;
+  }
+  .headStyling{
+    font-size: 1.8em;
+  }
+
+  .spec-img img{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 15%;
+    top: -5vw; 
+  }
+}

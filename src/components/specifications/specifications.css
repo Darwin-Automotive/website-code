@@ -1,0 +1,48 @@
+.specs_brief{
+  margin: 10px 60px;
+}
+.specs_brief ul {
+  display: flex;
+  flex-direction: row;
+  flex: 30%;
+  height: 10%;
+  padding: 30px 60px;
+  margin: -60px 0 0 50px;
+  justify-content: center;
+}
+
+
+.specs p {
+  font-size: 18pt;
+  color: #D2D2D2;
+  /* color: #121212; */
+  font-family: 'Oxygen', serif;
+  font-weight: 900;
+  padding: 0px 0 0 80px;
+  text-transform: uppercase;
+  /* border: 2px dashed #f2f2f2; */
+}
+
+@media(max-width:480px){
+  .specs_brief{
+    margin: -40px;
+    /* width: 100%; */
+    text-align: center;
+  }
+  .specs_brief ul{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    padding: 20px 0 0px 0;
+    margin: -50px 0 0 260px;
+    text-align: center;
+  }
+
+  .specs p{
+    padding: 30px 0 0 0px;
+    word-spacing: 5px;
+    line-height: 30px;
+    font-size: 12pt;
+    text-align: center;
+  }
+}
