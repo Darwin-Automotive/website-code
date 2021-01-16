@@ -131,7 +131,7 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
 
     if (flag) {
       axios
-        .post("/send", {
+        .post("https://us-central1-da-preorder.cloudfunctions.net/send", {
           params: {
             username: username,
             email: email,

@@ -18,7 +18,7 @@ const Footer = () => {
     e.preventDefault();
 
     axios
-      .post("/sendEmail", {
+      .post("https://us-central1-da-preorder.cloudfunctions.net/sendEmail", {
         params: {
           email: email,
         },
