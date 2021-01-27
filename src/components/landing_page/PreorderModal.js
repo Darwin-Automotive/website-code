@@ -3,6 +3,7 @@ import axios from "axios";
 import FooterSocialLink from "../footer/FooterSocialLink";
 import { motion } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
+import PrivacyPDF from "../../random/Privacy and Cookie Policy- 09-11-2020.pdf";
 // import Heading from '../Heading';
 import CloseIcon from "../../images/new_images/close-24px.svg";
 import "./preordercss.css";
@@ -203,6 +204,7 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
           src={CloseIcon}
           className="close-form-icon"
           onClick={handleClick}
+          alt=""
         />
         <h1>E-Bike Pre-order Form</h1>
 
@@ -295,7 +297,7 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
               className="agreement"
               name="agreement"
               onChange={handleChange}
-              value={agreement}
+              value={agreement ? agreement : ""}
               required
             />
             I have read and also agree to the Privacy Terms under DARWIN
@@ -303,7 +305,9 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
           </label>
 
           {/* <a href="" >Terms & Conditions</a> */}
-          <a href="">Privacy Terms</a>
+          <a href={PrivacyPDF} target="_blank">
+            Privacy Terms
+          </a>
 
           <a className="preorder-btn" onClick={submitPreorder}>
             Pre Order

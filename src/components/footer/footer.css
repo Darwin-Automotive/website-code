@@ -1,32 +1,31 @@
-@font-face{
+@font-face {
   font-family: "Headache-Font-OTF";
-  src: url('../../random/Headache-Font-OTF.otf');
+  src: url("../../random/Headache-Font-OTF.otf");
 }
 
-footer{
+footer {
   width: 100%;
   max-height: 90vh;
   background-color: #111111;
   /* background-color: #d9d9d9; */
   margin-top: 15%;
-  background-image: url('../../images/new_images/9.png');
+  background-image: url("../../images/new_images/9.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.footer-left{
+.footer-left {
   margin-left: 13%;
 }
-.sign-up{
+.sign-up {
   padding: 5px 0 0 5%;
- 
 }
-.sign-up input{
+.sign-up input {
   padding: 20px 10px;
   border: none;
   border-bottom: 1px #f2f2f2 solid;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-size: 9pt;
   background-color: transparent;
   /* text-transform: uppercase; */
@@ -36,19 +35,19 @@ footer{
   width: 15%;
 }
 
-.sign-up label{
+.sign-up label {
   position: relative;
   left: 16%;
   display: inline;
 }
-.sign-up label i{
+.sign-up label i {
   font-size: 20px;
 }
-.sign-up label i:hover{
-  color: #49D14E;
+.sign-up label i:hover {
+  color: #49d14e;
   cursor: pointer;
 }
-.about-us{
+.about-us {
   width: 40%;
   height: 100%;
   float: right;
@@ -56,23 +55,23 @@ footer{
   /* border-left: 1px solid #292929; */
 }
 
-.about-us h1{
+.about-us h1 {
   font-size: 6em;
-  font-family: 'Headache-Font-OTF';
+  font-family: "Headache-Font-OTF";
   /* font-weight: 900; */
-  color: #F2F2F2;
+  color: #f2f2f2;
   /* color: #3f3f3f; */
   display: block;
   margin: -10% 0 3% 25%;
 }
 
-.about-us p{
+.about-us p {
   font-size: 10.5pt;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   /* letter-spacing: 2px; */
   width: 75%;
   padding: 10px;
-  color: #a9a9a9;  
+  color: #a9a9a9;
   /* color: #5f5f5f; */
   line-height: 25px;
   word-spacing: 3px;
@@ -80,184 +79,179 @@ footer{
   float: right;
 }
 
-.about-us b{
+.about-us b {
   font-size: 8pt;
-  color: #a9a9a9;  
+  color: #a9a9a9;
   /* color: #5f5f5f; */
-  font-family: 'Rubik';
+  font-family: "Rubik";
   padding: 10% 0 0 1%;
   display: block;
   /* float: right; */
   text-transform: uppercase;
 }
-.contact-info{
+.contact-info {
   width: 60%;
   height: 80%;
   margin: 2% 5%;
 }
 
-.contact-info p{
-  color: #a9a9a9;  
+.contact-info p {
+  color: #a9a9a9;
   /* color: #5f5f5f; */
   font-size: 10pt;
   letter-spacing: 1px;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   padding: 18px 5px;
 }
 
-.contact-info i{
+.contact-info i {
   font-size: 15px;
-  color: #a9a9a9;  
+  color: #a9a9a9;
   /* color: #5f5f5f; */
   padding-right: 10px;
 }
 
-.contact-info a{
-  color: #49D14E;
+.contact-info a {
+  color: #49d14e;
 }
 
-.social-container{
+.social-container {
   margin-left: 5%;
 }
-.social-link{
+.social-link {
   margin: 0% 2% 0 0%;
   display: inline-block;
 }
 
-.social-link i, .sign-up i{
+.social-link i,
+.sign-up i {
   font-size: 30px;
-  color: #a9a9a9;  
+  color: #a9a9a9;
   /* color: #5f5f5f; */
 }
 
-.social-link a:hover{
-  color: #49D14E;
+.social-link a:hover {
+  color: #49d14e;
   cursor: pointer;
 }
 
-.footer-links{
+.footer-links {
   padding: 4%;
 }
-.footer-link{
+.footer-link {
   margin: 5px 10px 0 30px;
   display: inline-block;
-  color: #a9a9a9;  
+  color: #a9a9a9;
   /* color: #5f5f5f; */
 }
 
-.footer-link a{
-  color: #a9a9a9;  
+.footer-link a {
+  color: #a9a9a9;
   /* color: #5f5f5f; */
   font-size: 8pt;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   text-transform: uppercase;
   text-decoration: underline;
 }
 
-.footer-link a:hover{
-  color: #49D14E;
+.footer-link a:hover {
+  color: #49d14e;
   cursor: pointer;
 }
 
-
-.footer-links h6{
+.footer-links h6 {
   display: none;
 }
 
-@media(max-width:480px){
-
-  footer{
+@media (max-width: 480px) {
+  footer {
     width: 100vw;
-    max-height: 160vh;
+    max-height: 500vh;
     /* background-image: url('../../images/new_images/9.png'); */
     background-position: top;
     /* margin-bottom: 5%; */
   }
 
-  .footer-left{
+  .footer-left {
     margin-left: 0;
   }
-  .sign-up{
+  .sign-up {
     display: flex;
     flex-direction: column;
   }
-  .sign-up input{
+  .sign-up input {
     padding: 20px auto;
     width: 70%;
   }
-  
-  .sign-up label{
+
+  .sign-up label {
     left: 75%;
   }
 
-  .about-us{
+  .about-us {
     width: 80%;
     float: left;
     justify-content: center;
     margin: 20px 10px;
   }
-  
-  .about-us h1{
+
+  .about-us h1 {
     font-size: 3em;
     margin: 0 0 10% 20%;
     text-align: center;
   }
-  
-  .about-us p{
+
+  .about-us p {
     font-size: 9pt;
     width: 80%;
     margin-left: 20%;
     word-spacing: 5px;
     float: left;
   }
-  
-  .about-us b{
+
+  .about-us b {
     font-size: 9pt;
     padding: 20% 0 0 1%;
     display: none;
   }
-  .contact-info{
+  .contact-info {
     width: 70%;
     margin: 10% 20%;
   }
-  
-  .contact-info p{
+
+  .contact-info p {
     font-size: 9pt;
   }
-  
 
-  
   /* .social-link{
     margin: 0 0 0 15%;
   } */
 
-  .social-container{
+  .social-container {
     margin-left: 30%;
   }
-  .social-link{
+  .social-link {
     margin: 5% 5% 0 0%;
     display: inline-block;
   }
-  
-  .social-link i, .sign-up i{
+
+  .social-link i,
+  .sign-up i {
     font-size: 20px;
     /* color: #a9a9a9;   */
     /* color: #5f5f5f; */
   }
 
-
-  .footer-link{
+  .footer-link {
     margin: 25px 10px 20px 60px;
     display: inline-block;
-    
   }
-  
-  .footer-links p{
-    color: #a9a9a9;    
+
+  .footer-links p {
+    color: #a9a9a9;
     /* color: #5f5f5f; */
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-size: 9pt;
     text-align: center;
   }
-
 }

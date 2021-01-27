@@ -1,4 +1,3 @@
-
 .row {
   margin: 50px 20%;
   margin-bottom: -2%;
@@ -6,8 +5,7 @@
 
 /* Create two equal columns that sits next to each other */
 
-
-.galleryContainer{
+.galleryContainer {
   /* display: flex;
   flex-wrap: wrap;
   flex-direction: row; */
@@ -16,27 +14,27 @@
   padding: 0 0rem;
 }
 
-.row .headStyling{
+.row .headStyling {
   padding: 15px 0;
   font-weight: 600;
   color: #f2f2f2;
   /* color: #121212; */
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 3em;
   margin: 0 1%;
 }
 
-@media(max-width:480px){
-  .row{
+@media (max-width: 480px) {
+  .row {
     margin: 30px 10%;
   }
-  .galleryContainer{
+  .galleryContainer {
     margin: 0px;
-    padding: 30px 0rem;
+    padding: 30px 5px;
   }
-  .row .headStyling{
+  .row .headStyling {
     font-size: 1.8em;
   }
 }
