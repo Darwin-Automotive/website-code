@@ -243,10 +243,13 @@ footer {
   }
 
   .footer-link {
-    margin: 25px 10px 20px 60px;
-    display: inline-block;
+    margin: 5px 10px 20px 60px;
+    display: flex;
   }
 
+  .footer-link > p > a {
+    text-decoration: none;
+  }
   .footer-links p {
     color: #a9a9a9;
     /* color: #5f5f5f; */

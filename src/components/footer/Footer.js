@@ -4,6 +4,9 @@ import CompanyDetails from "./CompanyDetails";
 import FooterLink from "./FooterLink";
 import FooterSocialLink from "./FooterSocialLink";
 import Heading from "../Heading";
+import DarwinPrivacy from "../../random/DarwinPrivacyDocument.pdf";
+import DarwinTerms from "../../random/DarwinT&CDocument.pdf";
+import DarwinRefund from "../../random/DarwinRefundDocument.pdf";
 import "./footer.css";
 
 const Footer = () => {
@@ -84,7 +87,9 @@ const Footer = () => {
         <div className="footer-links">
           {/* <FooterLink title="Terms &amp; Conditions" link=""/> */}
           <h6>&copy;| DARWIN Automotive</h6>
-          <FooterLink title="Privacy " />
+          <FooterLink title="Privacy" document={DarwinPrivacy} />
+          <FooterLink title="Terms & Conditions" document={DarwinTerms} />
+          <FooterLink title="Refund Policy" document={DarwinRefund} />
         </div>
       </footer>
     </>
