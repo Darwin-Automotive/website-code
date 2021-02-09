@@ -1,9 +1,13 @@
 const functions = require("firebase-functions");
 // const admin = require("firebase-admin");
 const nodemailer = require("nodemailer");
-const cors = require("cors")({
-  origin: true,
-});
+const cors = require("cors");
+// ({
+//   origin: false,
+// });
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 3001;
 // admin.initializeApp();
 
 let transporter = nodemailer.createTransport({
@@ -17,19 +21,9 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-// transporter.verify((error, success) => {
-//   if(error){
-//     console.log(error);
-//   } else {
-//     console.log("Server is ready to receive our messages");
-//   }
-// });
-
 // app.use(express.json());
 exports.send = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    console.log(req.body.params);
-    console.log(req.body.params.district);
     // console.log(JSON.stringify(req.body.params))
     // console.log(express.json())
     var username = req.body.params.username;
@@ -66,7 +60,6 @@ exports.send = functions.https.onRequest((req, res) => {
 
 exports.sendEmail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    console.log(req.body.params);
     var email = req.body.params.email;
     var content = `<h4>Email: ${email}</h4>`;
 
@@ -90,3 +83,9 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
     });
   });
 });
+app.use(cors({ origin: true }));
+app.use(express.json({ extended: false }));
+
+app.use("/events/payments", require("./routes/payments"));
+
+app.listen(port, () => console.log(`Server started on PORT ${port}`));

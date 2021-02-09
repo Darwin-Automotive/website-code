@@ -15,12 +15,12 @@ const sidebar = {
     }
   }),
   closed: {
-    clipPath: "circle(20px at 40px 40px)",
+    clipPath: "circle(25px at 40px 40px)",
     transition: {
       delay: 0,
       type: "spring",
-      stiffness: 700,
-      damping: 50
+      stiffness: 500,
+      damping: 50,
     }
   }
 };

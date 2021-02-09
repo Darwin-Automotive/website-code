@@ -17,8 +17,6 @@ body {
   background-image: linear-gradient(325deg, #070707 4%, #010101 90% );
   /* background-image: linear-gradient(325deg, #fff 4%, #fcfcfc 90% ); */
   overflow-x: hidden;
-
-
 }
 
 @media(max-width:480px){

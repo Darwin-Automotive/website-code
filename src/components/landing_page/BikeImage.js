@@ -14,6 +14,11 @@ const BikeImage = () => {
 
   return (
     <div className="bike_image">
+      {/* <div className="events_page">
+        <h5>
+          We have something exciting lined up. Check this space out for more!
+        </h5>
+      </div> */}
       <img src={BikeImg3} alt="MARK IV E-bike" />
       <SpecsBrief />
       {/* <Buttons children="Pre order" style={PreorderCSS}/> */}

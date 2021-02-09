@@ -1,14 +1,15 @@
-
-:root{
-  --primary: #49D14E;
+:root {
+  --primary: #49d14e;
 }
 
 .buttons {
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: linear-gradient(325deg, #131313 20%, #999999 10%);
-  box-shadow: 6px 3px 15px rgba(210, 210, 210, .13);
+  /* background-color: linear-gradient(325deg, #131313 20%, #999999 10%); */
+  /* background-image: linear-gradient(325deg, #070707 4%, #010101 90%); */
+
+  box-shadow: 6px 3px 15px rgba(210, 210, 210, 0.13);
   /* box-shadow: 6px 3px 15px rgba(210, 210, 210, 1); */
   border-radius: 40px;
   padding: 15px 35px;
@@ -18,24 +19,24 @@
   /* letter-spacing: 2px; */
   text-transform: uppercase;
   /* color: #121212; */
-  color: #F2F2F2;
+  color: #f2f2f2;
   display: inline-block;
   margin: 1% 25px 0 0;
   padding: 15px 40px;
+  text-decoration: none;
 }
 
-.buttons:hover{
+.buttons:hover {
   /* background-color: #47D14E; */
-  color: #49D14E;
+  color: #49d14e;
   transition: all 0.3s ease-out;
   border: none;
   transform: translate(1px, -1px);
-  box-shadow: 3px 3px 15px rgba(210, 210, 210, .2);
-
+  box-shadow: 3px 3px 15px rgba(210, 210, 210, 0.2);
 }
 
-@media(max-width:780px){
-  .buttons{
+@media (max-width: 780px) {
+  .buttons {
     width: 80%;
     padding: 15px auto;
     text-align: center;

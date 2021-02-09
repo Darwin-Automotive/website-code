@@ -40,7 +40,6 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
   const zipcodeRegex = RegExp(/^[0-9]{0,6}/);
 
   const handleChange = (e) => {
-    console.log(e.target);
     if (e.target.classList.contains("username")) {
       // textRegex.test(e.target.value) ? setUsername(e.target.value) : () => { setUsername(""); console.log("Please enter a valid name."); }
       if (!textRegex.test(e.target.value)) {
@@ -117,18 +116,6 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
 
   const submitPreorder = (e) => {
     e.preventDefault();
-    // axios({
-    //   method: "POST",
-    //   url: "/send",
-    //   body: {username, email, contactNum, Zipcode},
-    // }).then((response) => {
-    //   if(response.data.status === 'success'){
-    //     alert("Message sent.");
-    //   }
-    //   else if(response.data.status === 'fail'){
-    //     alert("Message failed to send.")
-    //   }
-    // })
 
     if (flag) {
       axios
@@ -164,6 +151,7 @@ const PreorderModal = ({ isModalOpen, setisModalOpen }) => {
   };
 
   const handleClick = (e) => {
+    e.preventDefault();
     setisModalOpen(false);
     setisOpen(false);
     // console.log(setisModalOpen)

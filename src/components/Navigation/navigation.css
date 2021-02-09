@@ -45,7 +45,7 @@ nav {
   background: #f9f9f9;
 }
 
-button {
+/* button {
   outline: none;
   order: none;
   -webkit-user-select: none;
@@ -58,9 +58,9 @@ button {
   width: 40px;
   height: 30px;
   border-radius: 50%;
-  border-color: transparent;
+  border: none;
   background: transparent;
-}
+} */
 
 .nav-links ul {
   padding: 0px;
@@ -102,7 +102,10 @@ button {
 }
 
 @media (max-width: 480px) {
-  .nav-links ul {
+  /* .nav-links ul {
     left: 40vw;
+  } */
+  .background {
+    display: none;
   }
 }

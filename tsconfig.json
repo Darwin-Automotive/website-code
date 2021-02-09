@@ -21,5 +21,5 @@
   },
   "include": [
     "src"
-  ]
+, "functions/razorpay.js"  ]
 }
