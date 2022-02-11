@@ -16,7 +16,7 @@
     "dist": "^0.1.2",
     "express": "^4.17.1",
     "framer-motion": "^2.6.15",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nodemailer": "^6.4.14",
     "nodemon": "^2.0.6",
     "razorpay": "^2.0.6",
